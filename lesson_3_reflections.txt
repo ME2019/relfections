@@ -1,18 +1,38 @@
 What happens when you initialize a repository? Why do you need to do it?
 
+Empty repository is created with no commit. So that it won't automatically include files you actually don't want to keep track of.
+
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+
+Staging area is the preparation area for files to be committed. Files here are included in the next commit. To divide changes in the directory into several commits, each consists of a group of changes that shows a logical change to the file.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+First add files that are related to the first logical change you want to commit. Then make a commit. After, you stage other files that are related to the second logical change you want to commit. Then on and on.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Trying to add an experimental feature while keeping your software working.
+Keep your master branch clean of any untested changes. Instead you make an experimental branch for new features that need experimenting. After the new functionality works you could add the experimental branch into the master.
+
 How do the diagrams help you visualize the branch structure?
+
+Using git log --graph, you can see how the whole branch structure was created and at which point each branch was actually started. That gives you the overview of the whole structure of the project, so that you can see what you are focusing on and when and which branch to merge your work.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+The resulting merge commit becomes the new head of your the branch. The diagram shown by git log --graph shows the merged commit has two parents, which corresponds to the prior heads of each merged branch.
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+Pros:
+Saves you time.
+You concentrate on the changes containing conflict.
+
+Cons:
+Can make it easier to overlook the potentially dangerous situation where two people are working on the same file at the same time.
