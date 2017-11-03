@@ -1,33 +1,33 @@
 How did viewing a diff between two versions of a file help you see the bug that
 was introduced?
 
-    find difference
+Helped me spot the differences between both files, so I could spot the bug.
 
 How could having easy access to the entire history of a file make you a more
 efficient programmer in the long term?
 
-    see mistakes and go back
+Help you keep track of what it is that you have done. In case a change added recently conflicts with a previous code change. You can reverse a change you did not like by going back to orignial code.
 
 What do you think are the pros and cons of manually choosing when to create a
 commit, like you do in Git, vs having versions automatically saved, like Google
 docs does?
 
-    save what you want
+Manual commits are more likely to follow a logical pattern of changes, won't occur while you are in the middle of typing a line of code. You might forget to do a commit for a long period of time, harder to remember what you did, or lose everything you had done since the last commit if not saved. 
 
 Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
 
-    idk man
+Git was designed with coders and programmers in mind. Google Docs would be used by many. Most programs contain multiple files that will interact with each other in a variety of ways, making it more likely for changes in one file to require changes in another file at the same time. Saving multiple files in one commit wiht a logical connection  makes it easier for programmers.
 
 How can you use the commands git log and git diff to view the history of files?
 
-    compare and contrast
+Git log displays a list of all the commits made to a project. You use git diff along with the ids of two commit to compare the differences between them.
 
 How might using version control make you more confident to make changes that
 could break something?
 
-    idk man
+With version control if a change causes serious problems with the program you can go back to an older commit that worked and  compare them or go back to the old code and start over.
 
 Now that you have your workspace set up, what do you want to try using Git for?
 
-    ask devaughn-brown
+Use Git for projects give by Mr. Devaughn-Brown.
