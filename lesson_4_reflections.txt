@@ -1,29 +1,31 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    Fill in your answer here
+Use a remote repository for projects that have multiple collaborators, easier for others to obtain clones of the project and contribute to the project. A remote repository serves as a backup in case something happens to your local repository, or you want/need to switch computers.
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+Git auto might is good if you are the only one working on a project, but usually there are several people working on the project and contributing. With manual pulls it is easier to catch problems in between other people's codes.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+Fork can be done only in GitHub.
+Clone can copy repository from local to local, or copy repository from GitHub to local.
+Branch can be done only local repository.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+Having last known state of the remote stored locally can help you keep track of any changes being made to the remote since the last time you pushed a commit, makes it easier to catch and resolve conflicts when it is time to update your code.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+Send my changed file to the other person by using email. Easier to request each other. Harder merging each other's changes.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+Make changes in a separate branch when unsure if you want  changes committed directly to master. With changes in a separate branch, you can make the changes, commit, and push them to the remote repository. After create a pull request so others can see changes and see if want to merge the changes into master. Using a separate branch allows for more control and more places to catch and correct errors. Working directly in master is quicker and less complicated, which is good if you're the only one working on a project.
